@@ -1,0 +1,26 @@
+[Data Source]
+DisplayName=Мои задачи
+Enabled=true
+Parent=71d7d8527812d941a89fc7790e135001aa6380cd
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=krakozibr46@gmail.com
+CredentialName=
+IsExternal=false
+
+[Resource]
+Identity=gtasks::MDk2ODMyMjY3MjY5OTA5MDIyOTM6MDow
+
+[Alarms]
+IncludeMe=false
+LastNotified=
+
+[Task List]
+BackendName=gtasks
+Color=#becedd
+Selected=true

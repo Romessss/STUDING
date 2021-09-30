@@ -1,0 +1,47 @@
+2021-09-25 15:51:22,614 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2021-09-25 15:51:32,155 [   9541]   INFO -                         STDERR - сент. 25, 2021 3:51:28 PM java.util.prefs.FileSystemPreferences$1 run 
+2021-09-25 15:51:32,205 [   9591]   INFO -                         STDERR - INFO: Created user preferences directory. 
+2021-09-25 15:51:32,212 [   9598]   INFO -                         STDERR - сент. 25, 2021 3:51:32 PM java.util.prefs.FileSystemPreferences$6 run 
+2021-09-25 15:51:32,212 [   9598]   INFO -                         STDERR - WARNING: Prefs file removed in background /home/romka/.java/.userPrefs/prefs.xml 
+2021-09-25 15:51:32,335 [   9721]   INFO -        #com.intellij.idea.Main - IDE: CLion (build #CL-212.5284.51, 16 Sep 2021 21:21) 
+2021-09-25 15:51:32,344 [   9730]   INFO -        #com.intellij.idea.Main - OS: Linux (5.11.0-34-generic, amd64) 
+2021-09-25 15:51:32,371 [   9757]   INFO -        #com.intellij.idea.Main - JRE: 11.0.12+7-b1504.28 (JetBrains s.r.o.) 
+2021-09-25 15:51:32,372 [   9758]   INFO -        #com.intellij.idea.Main - JVM: 11.0.12+7-b1504.28 (OpenJDK 64-Bit Server VM) 
+2021-09-25 15:51:32,399 [   9785]   INFO -        #com.intellij.idea.Main - JVM Args: -XX:ReservedCodeCacheSize=512m -Xms256m -Xmx2000m -Xss2m -XX:NewSize=128m -XX:MaxNewSize=128m -XX:+UseG1GC -XX:SoftRefLRUPolicyMSPerMB=50 -XX:CICompilerCount=2 -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -ea -Dsun.io.useCanonCaches=false -Djdk.http.auth.tunneling.disabledSchemes="" -Djdk.attach.allowAttachSelf=true -Djdk.module.illegalAccess.silent=true -Dkotlinx.coroutines.debug=off -Dsun.tools.attach.tmp.only=true -XX:ErrorFile=/home/romka/java_error_in_clion_%p.log -XX:HeapDumpPath=/home/romka/java_error_in_clion_.hprof -Djb.vmOptionsFile=/snap/clion/164/bin/clion64.vmoptions -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Didea.vendor.name=JetBrains -Didea.paths.selector=CLion2021.2 -Didea.platform.prefix=CLion -Dsplash=true 
+2021-09-25 15:51:32,400 [   9786]   INFO -        #com.intellij.idea.Main - library path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib 
+2021-09-25 15:51:32,400 [   9786]   INFO -        #com.intellij.idea.Main - boot library path: /snap/clion/164/jbr/lib 
+2021-09-25 15:51:32,607 [   9993]   INFO -        #com.intellij.idea.Main - locale=ru_RU JNU=UTF-8 file.encoding=UTF-8
+  idea.config.path=/home/romka/.config/JetBrains/CLion2021.2
+  idea.system.path=/home/romka/.cache/JetBrains/CLion2021.2
+  idea.plugins.path=/home/romka/.local/share/JetBrains/CLion2021.2
+  idea.log.path=/home/romka/.cache/JetBrains/CLion2021.2/log 
+2021-09-25 15:51:32,735 [  10121]   INFO -        #com.intellij.idea.Main - CPU cores: 4; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@1ce38371[Running, parallelism = 3, size = 3, active = 2, running = 2, steals = 2, tasks = 0, submissions = 0]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@771578d 
+2021-09-25 15:51:34,689 [  12075]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 1954 ms 
+2021-09-25 15:51:51,158 [  28544]   INFO -        #com.intellij.idea.Main - WM detected: GNOME Shell 
+2021-09-25 15:51:51,289 [  28675]   INFO -        #com.intellij.idea.Main - Importing configs to /home/romka/.config/JetBrains/CLion2021.2 
+2021-09-25 15:51:51,331 [  28717]   INFO -        #com.intellij.idea.Main - No configs imported, starting with clean configs at /home/romka/.config/JetBrains/CLion2021.2 
+2021-09-25 15:51:56,722 [  34108]   INFO -                #LicenseManager - License required; details: N/A 
+2021-09-25 15:52:19,285 [  56671]   INFO -              #JetprofileSource - Unexpected JBA connection error: Authorization failed: Wrong username or password (java.lang.Exception) 
+2021-09-25 15:52:39,684 [  77070]   INFO -              #JetprofileSource - Unexpected JBA connection error: Authorization failed: Wrong username or password (java.lang.Exception) 
+2021-09-25 15:52:40,348 [  77734]   INFO -              #JetprofileSource - Unexpected JBA connection error: Authorization failed: Wrong username or password (java.lang.Exception) 
+2021-09-25 15:52:56,392 [  93778]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2021-09-25 15:52:56,431 [  93817]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2021-09-25 16:51:22,021 [      1]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2021-09-25 16:51:35,913 [  13893]   INFO -        #com.intellij.idea.Main - IDE: CLion (build #CL-212.5284.51, 16 Sep 2021 21:21) 
+2021-09-25 16:51:35,914 [  13894]   INFO -        #com.intellij.idea.Main - OS: Linux (5.11.0-34-generic, amd64) 
+2021-09-25 16:51:35,958 [  13938]   INFO -        #com.intellij.idea.Main - JRE: 11.0.12+7-b1504.28 (JetBrains s.r.o.) 
+2021-09-25 16:51:35,958 [  13938]   INFO -        #com.intellij.idea.Main - JVM: 11.0.12+7-b1504.28 (OpenJDK 64-Bit Server VM) 
+2021-09-25 16:51:35,959 [  13939]   INFO -        #com.intellij.idea.Main - JVM Args: -XX:ReservedCodeCacheSize=512m -Xms256m -Xmx2000m -Xss2m -XX:NewSize=128m -XX:MaxNewSize=128m -XX:+UseG1GC -XX:SoftRefLRUPolicyMSPerMB=50 -XX:CICompilerCount=2 -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -ea -Dsun.io.useCanonCaches=false -Djdk.http.auth.tunneling.disabledSchemes="" -Djdk.attach.allowAttachSelf=true -Djdk.module.illegalAccess.silent=true -Dkotlinx.coroutines.debug=off -Dsun.tools.attach.tmp.only=true -XX:ErrorFile=/home/romka/java_error_in_clion_%p.log -XX:HeapDumpPath=/home/romka/java_error_in_clion_.hprof -Djb.vmOptionsFile=/snap/clion/164/bin/clion64.vmoptions -Djava.system.class.loader=com.intellij.util.lang.PathClassLoader -Didea.vendor.name=JetBrains -Didea.paths.selector=CLion2021.2 -Didea.platform.prefix=CLion -Dsplash=true 
+2021-09-25 16:51:35,960 [  13940]   INFO -        #com.intellij.idea.Main - library path: /usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib 
+2021-09-25 16:51:35,960 [  13940]   INFO -        #com.intellij.idea.Main - boot library path: /snap/clion/164/jbr/lib 
+2021-09-25 16:51:36,211 [  14191]   INFO -        #com.intellij.idea.Main - locale=ru_RU JNU=UTF-8 file.encoding=UTF-8
+  idea.config.path=/home/romka/.config/JetBrains/CLion2021.2
+  idea.system.path=/home/romka/.cache/JetBrains/CLion2021.2
+  idea.plugins.path=/home/romka/.local/share/JetBrains/CLion2021.2
+  idea.log.path=/home/romka/.cache/JetBrains/CLion2021.2/log 
+2021-09-25 16:51:36,234 [  14214]   INFO -        #com.intellij.idea.Main - CPU cores: 4; ForkJoinPool.commonPool: java.util.concurrent.ForkJoinPool@3967e60c[Running, parallelism = 3, size = 3, active = 3, running = 2, steals = 0, tasks = 0, submissions = 1]; factory: com.intellij.concurrency.IdeaForkJoinWorkerThreadFactory@60d8c9b7 
+2021-09-25 16:51:38,134 [  16114]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 1899 ms 
+2021-09-25 16:51:55,434 [  33414]   INFO -        #com.intellij.idea.Main - WM detected: GNOME Shell 
+2021-09-25 16:52:03,130 [  41110]   INFO -                #LicenseManager - License required; details: N/A 
+2021-09-25 16:52:11,969 [  49949]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2021-09-25 16:52:11,998 [  49978]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
