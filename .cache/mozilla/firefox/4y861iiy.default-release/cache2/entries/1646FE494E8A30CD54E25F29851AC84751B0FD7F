@@ -1,0 +1,329 @@
+<html>
+		<head><style>body { margin:0; padding:0px; background-color: #fff; }</style>
+		<script>
+		(function() {
+			let frame = window;
+			let cmpFrame;
+		  
+			const cmpCallbacks = {};		  
+			while(frame) {
+			  try {
+				if (frame.frames['__tcfapiLocator']) {
+				  cmpFrame = frame;
+				  break;
+				}
+			  } catch(ignore) {}
+		  
+			  if (frame === window.top) {
+				break;		  
+			  }
+		  
+			  frame = frame.parent;
+			}
+		  
+			window.__tcfapi = function(cmd, version, callback, arg) {
+			  if (!cmpFrame) {
+				callback({msg: 'CMP not found'}, false);
+			  } else {
+				const callId = Math.random() + '';
+				const msg = {
+				  __tcfapiCall: {
+					command: cmd,
+					parameter: arg,
+					version: version,
+					callId: callId,
+				  },
+				};
+		  
+				cmpCallbacks[callId] = callback;
+				cmpFrame.postMessage(msg, '*');
+			  }
+			};
+		  
+			function postMessageHandler(event) {
+			  let json = {};
+
+			  try {
+				json = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+			  } catch (ignore) {}
+		  
+			  const payload = json.__tcfapiReturn;
+		  
+			  if (payload) {
+				if (typeof cmpCallbacks[payload.callId] === 'function') {
+				  cmpCallbacks[payload.callId](payload.returnValue, payload.success);
+				  cmpCallbacks[payload.callId] = null;
+				}
+			  }
+			}
+		  
+			window.addEventListener('message', postMessageHandler, false);
+		  
+		  }());
+		</script>
+		</head>
+		<body leftMargin="0" topMargin="0" marginwidth="0" marginheight="0" ondragstart="return false;" ondrop="return false;"><script>
+    (function(id) {
+        if (document.getElementById(id)) return;
+        var pbjsEl = document.createElement('script'); pbjsEl.type = 'text/javascript'; pbjsEl.id = id;
+        pbjsEl.async = true; var isHttps = 'https:' === document.location.protocol;
+        pbjsEl.src = '//hb.adpone.com/prebid_v4_21.js';
+        var pbjsTargetEl = document.getElementsByTagName('head')[0];
+        pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+    })('prebid');
+    (function(){
+        const cmpRequired = parseInt('0');
+        var passbackTagHtml = `&lt;script src&#x3D;&quot;&#x2F;&#x2F;ads.projectagoraservices.com&#x2F;?id&#x3D;8595&amp;uref&#x3D;https%3A%2F%2Fwww.cyberforum.ru%2F&quot; type&#x3D;&quot;text&#x2F;javascript&quot;&gt;&lt;&#x2F;script&gt;
+`;
+        function unencodeHtmlContent(escapedHtml) {
+            var elem = document.createElement('div');
+            elem.innerHTML = escapedHtml;
+            var result = '';
+            for (var i = 0; i < elem.childNodes.length; ++i) {
+                result = result + elem.childNodes[i].nodeValue;
+            }
+            return result;
+        }
+        function getPlacementScriptElement(){
+            if (document.currentScript)
+                return document.currentScript;
+            else {
+                var scripts = document.getElementsByTagName('script');
+                var currentScript_2 = scripts[scripts.length - 1];
+                return currentScript_2;
+            }
+        }
+        function getQueryString(script){
+            var queryString = script.src.replace(/^[^\?]+\??/,'');
+            return '?'+queryString;
+        }
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                    results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            try {
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }catch(err){
+                return null;
+            }
+        }
+        var plmntScriptElement = getPlacementScriptElement();
+        var _id = new Date().getTime();
+        var _placementFrmId = 'postbid_if_' + _id;
+        var adUnitSizes = [[300,250]];
+        var adUnitBids = [
+                {
+                    bidder: 'ix',
+                    params: {
+                            siteId: '543887',
+                            size: [300,250],
+                    }
+                },
+                {
+                    bidder: 'between',
+                    params: {
+                            w: '300',
+                            h: '250',
+                            s: '4109652',
+                    }
+                },
+                {
+                    bidder: 'sovrn',
+                    params: {
+                            tagid: '907548',
+                    }
+                },
+                {
+                    bidder: 'adform',
+                    params: {
+                            mid: '1060748',
+                    }
+                },
+                {
+                    bidder: 'criteo',
+                    params: {
+                            zoneId: '1491572',
+                    }
+                },
+                {
+                    bidder: 'openx',
+                    params: {
+                            unit: '544087985',
+                            delDomain: 'adpone-d.openx.net',
+                    }
+                },
+                {
+                    bidder: 'rubicon',
+                    params: {
+                            accountId: '17210',
+                            siteId: '201784',
+                            zoneId: '2083098',
+                            sizes: '15',
+                            referrer: 'cyberforum.ru',
+                            position: 'atf',
+                    }
+                },
+                {
+                    bidder: 'appnexus',
+                    params: {
+                            placementId: '21743635',
+                    }
+                },
+                {
+                    bidder: 'smartadserver',
+                    params: {
+                            domain: 'https://prg.smartadserver.com',
+                            siteId: '413810',
+                            pageId: '1387822',
+                            formatId: '71867',
+                    }
+                },
+                {
+                    bidder: 'pubmatic',
+                    params: {
+                            publisherId: '156383',
+                            adSlot: 'cyberforum.ru_300x250_ATF_._second',
+                            kadpageurl: 'cyberforum.ru',
+                    }
+                },
+        ]
+        function getPlacementFrameId (){
+            return _placementFrmId;
+        }
+        function createPlacementIframe(id){
+            var frmEl = document.createElement('iframe');
+            frmEl.setAttribute('id', getPlacementFrameId());
+            frmEl.frameBorder = '0';
+            frmEl.scrolling = 'no';
+            frmEl.marginWidth = '0';
+            frmEl.marginHeight = '0';
+            frmEl.TOPMARGIN = '0';
+            frmEl.LEFTMARGIN = '0';
+            frmEl.ALLOWTRANSPARENCY = 'true';
+            frmEl.width = '0';
+            frmEl.height = '0';
+            return frmEl;
+        }
+        var plmntFrame = createPlacementIframe();
+        if (plmntScriptElement){
+            plmntScriptElement.parentNode.insertBefore(plmntFrame, plmntScriptElement);
+        }else {
+            return 0;
+        }
+        window.pbjs = window.pbjs || {};
+        pbjs.que = pbjs.que || [];
+        var adUnitCodeName = 'adpn-adtag-'  + _id;
+        pbjs.que.push(function() {
+            var adUnits = [{
+                code: adUnitCodeName,
+                sizes: adUnitSizes,
+                mediaTypes: {
+                    banner: {
+                        sizes: adUnitSizes
+                    }
+                },
+                bids: adUnitBids
+            }];
+            if (cmpRequired) {
+                pbjs.setConfig({
+                    consentManagement: {
+                        cmpApi: 'iab',
+                        timeout: 8000,
+                        allowAuctionWithoutConsent: true
+                    },
+                })
+            }
+            pbjs.setConfig({
+                userSync: {
+                    iframeEnabled: true,
+                    filterSettings: {
+                        iframe: {
+                            bidders: '*',
+                            filter: 'include'
+                        }
+                    },
+                    userIds: [{
+                        name: 'id5Id',
+                        params: {
+                            partner: 546,
+                        },
+                        storage: {
+                            type: 'html5',
+                            name: 'id5id',
+                            expires: 90,
+                            refreshInSeconds: 8 * 3600
+                        }
+                    }],
+                    auctionDelay: 50
+                },
+                schain: {
+                    validation: "strict",
+                    config: {
+                        ver:"1.0",
+                        complete: 1,
+                        nodes: [
+                            {
+                                "asi":"adpone.com",
+                                "sid":"",
+                                "hp":1
+                            }
+                        ]
+                    }
+                }
+            });
+            pbjs.bidderSettings = {
+                smartadserver: {
+                    bidCpmAdjustment : function(bidCpm) {
+                        return bidCpm * 0.88 ;
+                    }
+                }
+            };
+            pbjs.addAdUnits(adUnits);
+            pbjs.requestBids({
+                adUnitCodes: [adUnitCodeName],
+                timeout: 4000,
+                bidsBackHandler: function() {
+                    var iframe = document.getElementById(getPlacementFrameId());
+                    var iframeDoc = iframe.contentWindow.document;
+                    var params = pbjs.getAdserverTargetingForAdUnitCode(adUnitCodeName);
+                    if(params && params['hb_adid']){
+                        pbjs.renderAd(iframeDoc, params['hb_adid']);
+                    } else {
+                        if (passbackTagHtml) {
+                            iframe.width = adUnitSizes[0][0];
+                            iframe.height = adUnitSizes[0][1];
+                            iframeDoc.write(unencodeHtmlContent(passbackTagHtml));
+                            iframeDoc.close();
+                        } else {
+                            if (iframe){
+                                iframe.parentNode.removeChild(iframe);
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    })();
+    var gd = '2021-08-18 16:52:04';
+</script>
+
+		</body>
+		</html>ÅYj{Aê      aTÂêaTÂïCw£aTÂê   ö    O^partitionKey=%28https%2Ccyberforum.ru%29,:https://intelaxa.com/syncro?i=pve81fmq8ywdl6dpo9p62&a=21d25ea0e39a043cf7ee1f2789566c437&cb=6049911632953744080 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+content-type: text/html; charset=UTF-8
+date: Wed, 29 Sep 2021 22:15:44 GMT
+x-cache: Miss from cloudfront
+via: 1.1 2a4d61538fbb384d64746e2642e5e74e.cloudfront.net (CloudFront)
+x-amz-cf-pop: HEL50-C2
+x-amz-cf-id: XoMQaJr5bIb2oRug38tzzeKmIJMyJxJjbu36LEIOcVwMzFT8yJtyWA==
+X-Firefox-Spdy: h2
+ original-response-headers content-type: text/html; charset=UTF-8
+date: Wed, 29 Sep 2021 22:15:44 GMT
+x-cache: Miss from cloudfront
+via: 1.1 2a4d61538fbb384d64746e2642e5e74e.cloudfront.net (CloudFront)
+x-amz-cf-pop: HEL50-C2
+x-amz-cf-id: XoMQaJr5bIb2oRug38tzzeKmIJMyJxJjbu36LEIOcVwMzFT8yJtyWA==
+X-Firefox-Spdy: h2
+ ctid 1 uncompressed-len 0 net-response-time-onstart 546 net-response-time-onstop 2167   *¿
