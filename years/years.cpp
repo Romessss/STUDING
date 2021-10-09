@@ -16,7 +16,7 @@ int main()
                 cout << year << "- високосный";
             else
                 cout << year << "- невисокосный";
-    }
+        }
         else
             cout << year << "- високосный";
     }
@@ -24,6 +24,7 @@ int main()
         cout << year << "- невисокосный";
     
     cout << endl;
+    
     return 0;
     
     }
