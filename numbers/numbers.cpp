@@ -7,7 +7,7 @@ int main()
    int c = 20;
    int d = 4;
 
-   float x =static_cast<float> (a) * (b + (c / d));
+   float x =(a) * (b + (static_cast<float> (c) / d));
    
    int z = x;
    
