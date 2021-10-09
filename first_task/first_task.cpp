@@ -1,14 +1,13 @@
 #include <iostream>
-using namespace std;
-
 int main()
 
-    {
-    int n , i ;
+{
+    int n ;
+    int i ;
     bool isPrime = true;
 
-    cout << "Введите число :" ;
-    cin >>n;
+    std::cout << "Введите число :" ;
+    std::cin >> n;
 
     for(i = 2; i <= n / 2; ++i)
     {
@@ -19,10 +18,10 @@ int main()
         }
     }
     if(isPrime)
-        cout << "Это простое число" << endl;
+        std::cout << "Это простое число" << std::endl;
     else
-        cout << "Это не простое число" << endl;
+        std::cout << "Это не простое число" << std::endl;
 
         return 0 ;
-   
-    }
+
+}
