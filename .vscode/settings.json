@@ -9,6 +9,7 @@
         "istream": "cpp",
         "numeric": "cpp",
         "typeinfo": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "array": "cpp"
     }
 }
