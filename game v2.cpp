@@ -54,7 +54,7 @@ void get_player_move(void)
         matrix[x][y] = 'X';
 }
 
-//ход компьютера 
+//ход компьютера
 void get_computer_move(void)
 {
     register int t;
@@ -65,13 +65,13 @@ void get_computer_move(void)
     if (t == 9)
     {
         printf("ничья\n");
-        exit(0); 
+        exit(0);
     }
     else
         *p = 'O';
 }
 
-// отображение игровой доски 
+// отображение игровой доски
 void disp_matrix(void)
 {
     int t;
@@ -79,12 +79,12 @@ void disp_matrix(void)
     {
         printf(" %c | %c | %c", matrix[t][0], matrix[t][1], matrix[t][2]);
         if (t != 2)
-            printf("\n-|-|-\n");
+            printf("\n --------- \n");
     }
     printf("\n");
 }
 
-// проверка на победу 
+// проверка на победу
 char check(void)
 {
     int t;
