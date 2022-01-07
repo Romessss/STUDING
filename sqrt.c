@@ -29,3 +29,8 @@ void sqrt_c()
     test(141);
     test(12001);
 }
+
+int main()
+{
+    return 0;
+}

@@ -3,14 +3,14 @@
 
 int main(int argc, char *argv[])
 {
-    setlocale(0, "rus");
+    setlocale(0, "cat");
     int a, i, mass[99];
     for (i = 0; i < 99; i++)
     {
         mass[i] = 0;
     }
     printf("Введите число: ");
-    scanf_s("%d", &a);
+    scanf("%d", &a);
     i = 0;
     while (a != 0)
     {
@@ -29,6 +29,5 @@ int main(int argc, char *argv[])
     i = i - 1;
     for (; i >= 0; i--)
         printf("%d", mass[i]);
-    _getch();
     return 0;
 }
