@@ -4,7 +4,7 @@ using namespace std;
 class Person
 {
 private:
-    static int count; // счетчик
+    static int count; 
 protected:
     string n_name;
     int n_age;
@@ -23,7 +23,7 @@ public:
     string GetName() { return n_name; }
     int GetAge() { return n_age; }
     int GetWighr() { return n_wight; }
-    virtual void Print() //  виртуальная функция перегружаемая в классе Student
+    virtual void Print() 
     {
         cout << n_name << ' ' << n_age << ' ' << n_sex << ' ' << n_wight << endl;
     }
@@ -55,7 +55,7 @@ public:
         Person::Print();
     }
 };
-int Person::count = 0; // инициализация счетчика
+int Person::count = 0; 
 int main()
 {
     const int N = 2;
@@ -66,16 +66,16 @@ int main()
         string name, sex;
         cout << "Enter name age sex weight year:" << endl;
         cin >> name >> age >> sex >> wight >> year;
-        pers[i] = new Student(year, name, age, sex, wight); // указатель на Person инициализируем классом Student
-        cout << "Count=" << pers[i]->GetCount() << endl;    // вывод количества созданных экземпляров
+        pers[i] = new Student(year, name, age, sex, wight); 
+        cout << "Count=" << pers[i]->GetCount() << endl;   
     }
     for (int i = 0; i < N; i++)
         pers[i]->Print();
-    Student *s1 = static_cast<Student *>(pers[0]); // s1 теперь имеет тип Student*, иначе не вызвать AddYear
+    Student *s1 = static_cast<Student *>(pers[0]); 
     s1->AddYear(2);
     cout << "New age of " << s1->GetName() << " = "
          << s1->GetAge() << endl;
     for (int i = 0; i < N; i++)
-        delete pers[i]; // освобождение выделенной памяти
+        delete pers[i]; 
     return 0;
 }
